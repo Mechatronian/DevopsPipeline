@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-04T17:14:42 IST" name="InternetLogin" finished-at="2020-07-04T17:14:42 IST" duration-ms="78">
+  <suite started-at="2020-07-04T20:09:53 IST" name="Testsuite" finished-at="2020-07-04T20:09:53 IST" duration-ms="90">
     <groups>
     </groups>
-    <test started-at="2020-07-04T17:14:42 IST" name="Command line test" finished-at="2020-07-04T17:14:42 IST" duration-ms="78">
+    <test started-at="2020-07-04T20:09:53 IST" name="Regression" finished-at="2020-07-04T20:09:53 IST" duration-ms="90">
       <class name="InternetLogin">
-        <test-method signature="MainTest()[pri:0, instance:InternetLogin@52f759d7]" started-at="2020-07-04T17:14:42 IST" name="MainTest" finished-at="2020-07-04T17:14:42 IST" duration-ms="9" status="PASS">
+        <test-method signature="MainTest()[pri:0, instance:InternetLogin@62e136d3]" started-at="2020-07-04T20:09:53 IST" name="MainTest" finished-at="2020-07-04T20:09:53 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainTest -->
       </class> <!-- InternetLogin -->
-    </test> <!-- Command line test -->
-  </suite> <!-- InternetLogin -->
+    </test> <!-- Regression -->
+  </suite> <!-- Testsuite -->
 </testng-results>
