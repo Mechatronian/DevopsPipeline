@@ -36,7 +36,7 @@ public class InternetLogin {
 
     @AfterTest
     public void Terminate(){
-        //quit
+        //terminate
         driver.quit();
     }
 }
