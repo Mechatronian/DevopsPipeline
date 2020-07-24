@@ -3,11 +3,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import static java.lang.Thread.*;
 
@@ -16,13 +21,14 @@ public class InternetLogin {
     public WebDriver driver;
 
     @BeforeTest
-    public void Initialize(){
-        System.setProperty("webdriver.chrome.driver","D:\\Selenium_Drivers\\chromedriver.exe");
+    public void Initialize() throws MalformedURLException {
+        System.setProperty("webdriver.chrome.driver","D:\\DevopsTutorial\\JavaProjects\\Selenium_Drivers\\chromedriver.exe");
+        //driver = new RemoteWebDriver(new URL("http://192.168.0.7:4444/"), new ChromeOptions());
         driver = new ChromeDriver();
     }
 
     @Test
-    public void MainTest() throws InterruptedException {
+    public void Login() throws InterruptedException {
         //Login
         driver.get("https://the-internet.herokuapp.com/login");
         driver.findElement(By.id("username")).sendKeys("tomsmith");
@@ -35,8 +41,11 @@ public class InternetLogin {
     }
 
     @AfterTest
-    public void Terminate(){
+    public void Terminate() {
         //terminate
         driver.quit();
     }
+
+
+
 }
